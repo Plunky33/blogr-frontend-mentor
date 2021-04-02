@@ -1,0 +1,35 @@
+.menu {
+  &__box {
+    display: flex;
+  }
+
+  &__dropdown-box {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__dropdown {
+  }
+
+  &__dropdown-product {
+  }
+
+  &__dropdown-company {
+  }
+
+  &__dropdown-connect {
+  }
+
+  &__dropdown-list {
+    list-style: none;
+    &--1 {
+    }
+
+    &--2 {
+    }
+
+    &--3 {
+    }
+  }
+}

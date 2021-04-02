@@ -1,0 +1,33 @@
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-background-light, 0.9),
+      rgba($color-background-dark, 0.9)
+    ),
+    url(../../images/bg-pattern-intro.svg);
+  // background-blend-mode: screen;
+  position: relative;
+  background-size: 210%;
+  background-position: 35% 53%;
+  border-bottom-left-radius: 110px;
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__logo {
+    height: 3.5rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 55%; /* in relation to parent element */
+    left: 50%; /* in relation to parent element */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+  }
+}
