@@ -1,76 +1,62 @@
 .heading-primary {
-  color: $color-white;
-  margin-bottom: 1.5rem; /* margin for button */
-  display: block;
-
   &--main {
-    font-size: 7rem;
-    font-family: "Ubuntu";
-    font-weight: 700;
+    font-family: "Overpass", sans-serif;
+    font-weight: 600;
+    font-size: 8.3rem;
+    color: $color-white;
   }
 
   &--sub {
-    font-size: 2rem;
-    font-weight: 400;
-  }
-}
-
-.heading-secondary {
-  font-size: 3.5rem;
-  font-weight: 700;
-  display: inline-block;
-  letter-spacing: 0.2rem;
-  color: $color-white;
-}
-
-.heading-tertiary {
-  font-size: $default-font-size;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.section-future-heading {
-  &--main {
-    display: block;
-    text-align: center;
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: $color-blue-dark-1;
-  }
-}
-
-.section-mobile {
-  &--main {
-    display: block;
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-family: "Overpass", sans-serif;
+    font-family: 300;
+    font-size: 3rem;
     color: $color-white;
   }
 }
 
-.section-heading {
-  &--sub {
-    display: block;
-    font-size: 3rem;
-    color: $color-neutral-dark;
+.future {
+  &__headline-text {
+    font-family: "Overpass", sans-serif;
+    font-size: 4rem;
+    color: $color-blue-dark;
+    font-weight: 600;
   }
 }
 
-.text-white {
-  color: $color-white;
+.future-heading-primary {
+  font-family: "Overpass", sans-serif;
+  &--main {
+    font-size: 3.5rem;
+    color: $color-blue-dark-1;
+    // margin-bottom: 8rem;
+  }
+
+  &--paragraph {
+    font-size: $default-font-size;
+    color: $color-neutral-light;
+    word-spacing: 2px;
+    // margin-bottom: 10rem;
+    &:not(:last-child) {
+      margin-bottom: 6rem;
+    }
+  }
 }
 
-.section-future-paragraph,
-.section-mobile-paragraph,
-.section-tooling-paragraph {
+.mobile-heading-primary {
   font-family: "Overpass", sans-serif;
-  font-size: 1.75rem;
-  font-weight: 300;
-  margin-top: 4rem;
-  line-height: 2.75rem;
-  word-spacing: 6px;
 
-  &:not(:last-child) {
-    margin-bottom: 3rem;
+  &--main {
+    font-size: 3.5rem;
+    color: $color-white;
+  }
+
+  &--paragraph {
+    font-size: $default-font-size;
+    color: $color-white;
+    word-spacing: 2px;
+
+    &:not(:last-child) {
+      margin-bottom: 6rem;
+    }
   }
 }

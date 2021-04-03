@@ -1,14 +1,14 @@
 .header {
   height: 95vh;
   background-image: linear-gradient(
-      to right bottom,
+      to right,
       rgba($color-background-light, 0.9),
       rgba($color-background-dark, 0.9)
     ),
     url(../../images/bg-pattern-intro.svg);
-  // background-blend-mode: screen;
+  background-blend-mode: luminosity;
   position: relative;
-  background-size: 210%;
+  // background-size: 210%;
   background-position: 35% 53%;
   border-bottom-left-radius: 110px;
 
