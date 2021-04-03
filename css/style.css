@@ -71,16 +71,21 @@ body {
   color: #2c2d3f;
   font-weight: 600; }
 
-.future-heading-primary {
+.future-heading-primary,
+.laptop-heading-primary {
   font-family: "Overpass", sans-serif; }
-  .future-heading-primary--main {
+  .future-heading-primary--main,
+  .laptop-heading-primary--main {
     font-size: 3.5rem;
     color: #3f4164; }
-  .future-heading-primary--paragraph {
+  .future-heading-primary--paragraph,
+  .laptop-heading-primary--paragraph {
     font-size: 1.6rem;
     color: #c8c8cb;
-    word-spacing: 2px; }
-    .future-heading-primary--paragraph:not(:last-child) {
+    word-spacing: 2px;
+    width: 85%; }
+    .future-heading-primary--paragraph:not(:last-child),
+    .laptop-heading-primary--paragraph:not(:last-child) {
       margin-bottom: 6rem; }
 
 .mobile-heading-primary {
@@ -111,7 +116,7 @@ body {
   margin-bottom: 10rem !important; }
 
 .u-margin-top-small {
-  margin-top: 1.5rem !important; }
+  margin-top: 2.5rem !important; }
 
 .u-margin-top-medium {
   margin-top: 4rem !important; }
@@ -124,6 +129,9 @@ body {
 
 .u-margin-top-2x-huge {
   margin-top: 20rem !important; }
+
+.u-margin-top-3x-huge {
+  margin-top: 32rem !important; }
 
 .bg-video {
   position: absolute;
@@ -244,6 +252,32 @@ body {
 
 .menu__dropdown-list {
   list-style: none; }
+
+.footer {
+  position: relative;
+  background-color: #25252d;
+  padding: 10rem 10rem 10rem 10rem;
+  font-size: 1.4rem;
+  color: white;
+  border-top-right-radius: 80px; }
+  .footer__logo {
+    width: 10rem;
+    height: auto;
+    display: inline-block; }
+  .footer__product, .footer__company, .footer__connect {
+    display: inline-block;
+    width: 10rem;
+    height: auto; }
+  .footer__product ul li,
+  .footer__company ul li,
+  .footer__connect ul li {
+    list-style: none;
+    padding-top: 2rem;
+    color: #c8c8cb; }
+    .footer__product ul li:first-child,
+    .footer__company ul li:first-child,
+    .footer__connect ul li:first-child {
+      padding-top: 4rem; }
 
 .header {
   height: 95vh;
@@ -405,8 +439,19 @@ body {
   position: relative;
   height: 50vh; }
 
-.image-container {
+.mobile-image-container {
   position: absolute;
   top: -13%;
   left: -15%;
+  display: inline-block; }
+
+.laptop {
+  position: relative;
+  padding: 5rem 5rem 15rem 0;
+  overflow: hidden; }
+
+.laptop-image-container {
+  position: absolute;
+  top: 35%;
+  left: -41%;
   display: inline-block; }

@@ -23,7 +23,8 @@
   }
 }
 
-.future-heading-primary {
+.future-heading-primary,
+.laptop-heading-primary {
   font-family: "Overpass", sans-serif;
   &--main {
     font-size: 3.5rem;
@@ -35,6 +36,7 @@
     font-size: $default-font-size;
     color: $color-neutral-light;
     word-spacing: 2px;
+    width: 85%;
     // margin-bottom: 10rem;
     &:not(:last-child) {
       margin-bottom: 6rem;
