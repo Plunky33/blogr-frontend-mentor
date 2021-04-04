@@ -80,7 +80,7 @@ body {
     color: #3f4164; }
   .future-heading-primary--paragraph,
   .laptop-heading-primary--paragraph {
-    font-size: 1.6rem;
+    font-size: 0.95rem;
     color: #c8c8cb;
     word-spacing: 2px;
     width: 85%; }
@@ -286,21 +286,56 @@ body {
   position: relative;
   background-position: 35% 53%;
   border-bottom-left-radius: 110px; }
-  .header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
-  .header__logo {
-    height: 3.5rem; }
   .header__text-box {
     position: absolute;
-    top: 55%;
+    top: 60%;
     /* in relation to parent element */
     left: 50%;
     /* in relation to parent element */
     transform: translate(-50%, -50%);
     text-align: center;
     width: 80%; }
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 8rem 0rem 8rem 16rem; }
+  .nav__dropdown-content {
+    display: none; }
+  .nav__dropdown i {
+    transition: all 0.5s ease-out; }
+  .nav__dropdown:hover {
+    cursor: pointer; }
+  .nav__dropdown:hover i {
+    transform: translateY(4px); }
+  .nav__dropdown:hover .nav__dropdown-content {
+    display: block;
+    position: absolute;
+    color: #ff525d;
+    background-color: white;
+    text-decoration: none;
+    list-style: none;
+    padding: 1rem 2rem;
+    min-width: 20rem;
+    border-radius: 8px;
+    box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.2);
+    z-index: 1; }
+  .nav__dropdown-content li:hover {
+    color: #4b5862;
+    cursor: pointer; }
+  .nav__logo {
+    height: 3.5rem; }
+  .nav__product, .nav__company, .nav__connect {
+    padding-left: 8rem;
+    color: white; }
+  .nav__login-box {
+    margin-left: auto;
+    padding: 2rem 8rem 2rem 0rem; }
+
+.fas {
+  padding: 0.25rem 0 0 0.5rem; }
 
 .row {
   max-width: 144rem;

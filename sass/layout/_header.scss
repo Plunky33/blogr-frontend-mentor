@@ -12,22 +12,81 @@
   background-position: 35% 53%;
   border-bottom-left-radius: 110px;
 
-  &__logo-box {
+  &__text-box {
     position: absolute;
-    top: 4rem;
-    left: 4rem;
+    top: 60%; /* in relation to parent element */
+    left: 50%; /* in relation to parent element */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 8rem 0rem 8rem 16rem;
+
+  &__dropdown-content {
+    display: none;
+  }
+
+  &__dropdown i {
+    transition: all 0.5s ease-out;
+  }
+
+  &__dropdown:hover {
+    cursor: pointer;
+  }
+
+  &__dropdown:hover i {
+    transform: translateY(4px);
+  }
+
+  &__dropdown:hover &__dropdown-content {
+    display: block;
+    position: absolute;
+    color: $color-primary;
+    background-color: $color-white;
+    text-decoration: none;
+    list-style: none;
+    padding: 1rem 2rem;
+    min-width: 20rem;
+    border-radius: 8px;
+    box-shadow: 0 0.8rem 1.6rem rgba($color-black, 0.2);
+    z-index: 1;
+  }
+
+  &__dropdown-content li:hover {
+    color: $color-neutral-dark;
+    cursor: pointer;
+  }
+
+  &__logo-box {
+    // position: absolute;
+    // top: 4rem;
+    // left: 8rem;
   }
 
   &__logo {
     height: 3.5rem;
   }
 
-  &__text-box {
-    position: absolute;
-    top: 55%; /* in relation to parent element */
-    left: 50%; /* in relation to parent element */
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 80%;
+  &__product,
+  &__company,
+  &__connect {
+    padding-left: 8rem;
+    color: $color-white;
   }
+
+  &__login-box {
+    margin-left: auto;
+    padding: 2rem 8rem 2rem 0rem;
+  }
+}
+
+.fas {
+  padding: 0.25rem 0 0 0.5rem;
 }

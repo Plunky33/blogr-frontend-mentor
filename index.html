@@ -21,6 +21,10 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Frontend Mentor | [Blogr]</title>
@@ -38,18 +42,61 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__logo-box">
-        <img src="images/logo.svg" alt="Blogr Logo" class="header__logo" />
+      <div class="nav">
+        <div class="nav__logo">
+          <div class="nav__logo-box">
+            <img src="images/logo.svg" alt="Blogr Logo" class="nav__logo" />
+          </div>
+        </div>
+        <div class="nav__product nav__dropdown">
+          Product <i class="fas fa-angle-down"></i>
+          <ul class="nav__dropdown-content">
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+            <li>Integrations</li>
+          </ul>
+        </div>
+        <div class="nav__company nav__dropdown">
+          Company
+          <i class="fas fa-angle-down"></i>
+          <ul class="nav__dropdown-content">
+            <li>About</li>
+            <li>Team</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+        <div class="nav__connect nav__dropdown">
+          Connect
+          <i class="fas fa-angle-down"></i>
+          <ul class="nav__dropdown-content">
+            <li>Contact</li>
+            <li>Newsletter</li>
+            <li>Linkedin</li>
+          </ul>
+        </div>
+
+        <div class="nav__login-box">
+          <div class="nav__login-btns">
+            <a href="#" class="btn btn--outline btn-animated">Login</a>
+
+            <a href="#" class="btn btn--white btn-animated">Sign up</a>
+          </div>
+        </div>
       </div>
       <div class="header__text-box">
         <h1 class="heading-primary">
           <span class="heading-primary--main"
             >A modern publishing platform</span
           >
+        </h1>
+        <h2>
           <span class="heading-primary--sub"
             >Grow your audience and build your online brand</span
           >
-        </h1>
+        </h2>
 
         <a href="#" class="btn btn--white btn-animated u-margin-top-big"
           >Start for free</a
@@ -157,7 +204,9 @@
               <h2 class="laptop-heading-primary--main u-margin-top-big">
                 Powerful tooling
               </h2>
-              <p class="laptop-heading-primary--paragraph u-margin-top-small">
+              <p
+                class="laptop-heading-primary--paragraph u-margin-top-small u-margin-bottom-big"
+              >
                 Batteries included. We built a simple and straightforward CLI
                 tool that makes customization and deployment a breeze, but
                 capable of producing even the most complicated sites.
